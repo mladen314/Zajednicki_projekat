@@ -1,7 +1,7 @@
 # Zajednicki_projekat
 ## Članovi tima:
 * Milica: Hello :D
-* Luka VujoviC
+* Luka Vujovic
 * Lazar
 * Dragan
 * Luka
