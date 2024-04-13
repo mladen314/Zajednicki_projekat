@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.nav ul { 
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.content-box {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 45%;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content {
+    width: 100%;
+}
+
+footer {
+    background-image: -webkit-linear-gradient(top, #2079b0, #271a70);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+
+
+
+.container {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.main {
+    display: none;
+}
+
+
+
+
+.question {
+    font-size: 6em;
+}
+
+
+.ans-row {
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+}
+
+
+.answer {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 65px; height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    margin: .5em;
+    cursor: pointer;
+
+
+}
+
+
+.answer:hover {
+    background-image: -webkit-linear-gradient(top, #2079b0, #271a70);
+    background-image: -moz-linear-gradient(top, #2079b0, #271a70);
+    background-image: -ms-linear-gradient(top, #2079b0, #271a70);
+    background-image: -o-linear-gradient(top, #2079b0, #271a70); 
+    background-image: linear-gradient(to bottom, #2079b0, #271a70);
+    text-decoration: none;
+}
+
+
+.container_h3{
+    margin-bottom: 10px;
+}
+
+.start-btn {
+    font-size: 30px;
+    padding: .5em;
+    border: 1px solid black;
+    border-radius: 40px;
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(top, #2079b0, #271a70);
+    background-image: -moz-linear-gradient(top, #2079b0, #271a70);
+    background-image: -ms-linear-gradient(top, #2079b0, #271a70);
+    background-image: -o-linear-gradient(top, #2079b0, #271a70); 
+    background-image: linear-gradient(to bottom, #2079b0, #271a70);
+    text-decoration: none;
+}
+
+
+
+.start-btn:hover {
+    background: #2079b0;
+    font-size: 50px;
+    border-radius: 40px;
+    background-image: -webkit-linear-gradient(top, #2079b0, #271a70);
+    background-image: -moz-linear-gradient(top, #2079b0, #271a70);
+    background-image: -ms-linear-gradient(top, #2079b0, #271a70);
+    background-image: -o-linear-gradient(top, #2079b0, #271a70); 
+    background-image: linear-gradient(to bottom, #2079b0, #271a70);
+    text-decoration: none;
+}
