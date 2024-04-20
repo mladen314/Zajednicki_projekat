@@ -31,7 +31,14 @@ function izracunaj(operator) { // do sad smo koristili let za deklarisanje promj
             rezultat = broj1 * broj2;
             break;
         case '/':
-            rezultat = broj1/broj2;
+            if(broj2==0){
+                rezultat='Dijeljenje sa nulom ne moze!'
+            }
+            else{
+                rezultat = broj1/broj2;
+
+            }
+            
             break;
         default:
             rezultat = "Nepoznat operator";
