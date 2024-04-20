@@ -58,3 +58,17 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+button{
+    height: 50px;
+    width: 50px;
+}
+
+.brojevi, .operacije{
+    margin: 20px;
+}
+
+.brojevi, .operacije, .rez{
+    display: flex;
+    justify-content: center;
+}
