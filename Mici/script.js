@@ -149,11 +149,3 @@ for (let i = 0; i < answer_buttons.length; i += 1) {
         current_question.display()
     })
 }
-
-
-
-
-
-
-    rezultatElement.textContent = rezultat;
-}
