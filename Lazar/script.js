@@ -122,3 +122,25 @@ for (let i = 0; i < answer_buttons.length; i += 1) {
         current_question.display()
     })
 }
+
+let displayValue = '';
+
+function appendToDisplay(value) {
+    displayValue += value;
+    document.getElementById('calculator-display').value = displayValue;
+}
+
+function clearDisplay() {
+    displayValue = '';
+    document.getElementById('calculator-display').value = '';
+}
+
+function calculate() {
+    try {
+        displayValue = eval(displayValue);
+        document.getElementById('calculator-display').value = displayValue;
+    } catch (error) {
+        document.getElementById('calculator-display').value = 'Error';
+    }
+}
+
