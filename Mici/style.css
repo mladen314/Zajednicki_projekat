@@ -1,123 +1,63 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-.container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-.main {
-    display: none;
-}
-
-
-
-
-.question {
-    font-size: 6em;
-}
-
-
-.ans-row {
-    padding: 1em;
-    box-sizing: border-box;
-    display: flex;
-}
-
-
-.answer {
-    border: 1px solid black;
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    border: 2px solid #ddd;
     border-radius: 5px;
-    width: 65px; height: 65px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    margin: .5em;
-    cursor: pointer;
-
-
-}
-
-
-.answer:hover {
-    background: #eaeaea;
-}
-
-
-.container_h3{
-    margin-bottom: 10px;
-}
-.start-btn {
-    font-size: 30px;
-    padding: .5em;
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-.start-btn:hover {
-    background: #eaeaea;
-}
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-.nav ul { 
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-}
-
-.nav ul li {
-    margin-right: 20px;
-}
-
-.nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-main {
     padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.content-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.content-box {
-    background-color: #f2f2f2;
+#display {
+    width: calc(100% - 40px);
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: right;
     border: 1px solid #ccc;
-    padding: 20px;
-    width: 45%;
-
-    margin-top: 10px;
-    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
 }
 
-.content {
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
     width: 100%;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+button:hover {
+    background-color: #ddd;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+button.operator {
+    background-color: #f36;
+    color: white;
+}
+
+button.operator:hover {
+    background-color: #d32;
+}
+
+button.clear {
+    background-color: #f00;
+    color: white;
+}
+
+button.clear:hover {
+    background-color: #d00;
 }
